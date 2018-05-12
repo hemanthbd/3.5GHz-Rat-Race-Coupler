@@ -1,5 +1,0 @@
--z -q -a -c -estart -o"./Debug/pitch_estimation.out" -x -i"C:/CCStudio_v3.1/C5500/dsplib" -i"C:/CCStudio_v3.1/C5500/cgtools/lib" -i"f:/ti/C5500/bios/lib" -i"f:/ti/C5500/dsk5510/lib" -i"f:/ti/c5500/rtdx/lib" -i"f:/ti/c5500/cgtools/lib" -l"rts55.lib" -l"55xdsp.lib"
-"F:\Users\sundevil\Desktop\Project_TI Files\pitch_estimation_tmpl\55xdsp.lib"
-"F:\Users\sundevil\Desktop\Project_TI Files\pitch_estimation_tmpl\Debug\max_idx.obj"
-"F:\Users\sundevil\Desktop\Project_TI Files\pitch_estimation_tmpl\Debug\pitch_estimation.obj"
-"F:\Users\sundevil\Desktop\Project_TI Files\pitch_estimation_tmpl\pitch_estimation.cmd"

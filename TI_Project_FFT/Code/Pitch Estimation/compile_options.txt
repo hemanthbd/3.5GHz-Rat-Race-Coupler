@@ -1,7 +1,0 @@
-compiler tab
-
--g -q -fr"C:\data\ASU\RT_DSP\Labs\lab12\CFFT\Debug" -i".\" -i"C:\CCStudio_v3.1\C5500\dsplib\include" -d"_DEBUG"
-
-linker tab
-
--q -c -o".\Debug\cfft.out" -x -i"C:\CCStudio_v3.1\C5500\dsplib" -i"C:\CCStudio_v3.1\C5500\cgtools\lib"  -l"rts55.lib" -l"55xdsp.lib"

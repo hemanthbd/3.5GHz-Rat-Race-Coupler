@@ -1,9 +1,0 @@
----------------------------  test_fft_f.pjt - Debug  ---------------------------
-"f:\ti\c5500\cgtools\bin\cl55" -g -q -fr"F:/Users/sundevil/Desktop/Project_TI Files/Formants FFT/Code Template/Debug" -d"_DEBUG" -@"Debug.lkf" "test_fft.c"
-"sine_f.dat", line 130: warning: last line of file ends without a newline
-"fft_float.c", line 23: warning: variable "scale" was set but never used
-
-"f:\ti\c5500\cgtools\bin\cl55" -@"Debug.lkf"
-
-Build Complete,
-  0 Errors, 2 Warnings, 0 Remarks.

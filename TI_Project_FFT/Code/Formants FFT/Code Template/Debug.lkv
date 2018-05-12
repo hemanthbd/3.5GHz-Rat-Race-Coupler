@@ -1,4 +1,0 @@
--z -q -c -o"./Debug/test_fft_f.out" -x -i"f:/ti/C5500/bios/lib" -i"f:/ti/C5500/dsk5510/lib" -i"f:/ti/c5500/rtdx/lib" -i"f:/ti/c5500/cgtools/lib"
-"F:\ti\c5500\cgtools\lib\rts55.lib"
-"F:\Users\sundevil\Desktop\Project_TI Files\Formants FFT\Code Template\Debug\test_fft.obj"
-"F:\Users\sundevil\Desktop\Project_TI Files\Formants FFT\Code Template\exp9.cmd"
