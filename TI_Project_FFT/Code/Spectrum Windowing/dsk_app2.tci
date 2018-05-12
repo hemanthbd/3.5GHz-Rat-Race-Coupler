@@ -1,0 +1,55 @@
+/*
+ *  ======== audioapp.tci ========
+ *
+ *! Revision History
+ *! ================
+ *! 22-Aug-2002 mw Created
+ * 
+ */
+
+/* Create dmaCfgReceive configuration for codec receive on DMA */
+dmaCfgReceive = DMA.create("dmaCfgReceive");
+dmaCfgReceive.dmaSetManually = 1;
+dmaCfgReceive.dmaCsdp = 0x020d;
+dmaCfgReceive.dmaCcr = 0xcb49;
+dmaCfgReceive.dmaCicr = 0x0020;
+dmaCfgReceive.dmaSrcSpaceAdv = "Data Space";
+dmaCfgReceive.dmaSrcAddrFormatAdv = "Numeric";
+dmaCfgReceive.dmaCssalNumeric = 0x6002;
+dmaCfgReceive.dmaCssauNumeric = 0x0000;
+dmaCfgReceive.dmaDstSpaceAdv = "Data Space";
+dmaCfgReceive.dmaDstAddrFormatAdv = "Symbolic"
+dmaCfgReceive.dmaCdsalSymbolic = "gBufferRcvPingL";
+dmaCfgReceive.dmaCenAdv = 0x0002;
+dmaCfgReceive.dmaCfnAdv = 0x0400;
+dmaCfgReceive.dmaSetManually = 0;
+
+/* Configure DMA0 to use handle hDmaRcv with config dmaCfgReceive */
+DMA1.dmaHandleEnable = 1;
+DMA1.dmaHandleName = "hDmaRcv";
+DMA1.dmaEnablePreInit = 1;
+DMA1.dmaPreInit = prog.get("dmaCfgReceive");
+
+/* Create dmaCfgXmt configuration for codec transmit on DMA */
+dmaCfgTransmit = DMA.create("dmaCfgTransmit");
+dmaCfgTransmit.dmaSetManually = 1;
+dmaCfgTransmit.dmaCsdp = 0x0605;
+dmaCfgTransmit.dmaCcr = 0x3b4a;
+dmaCfgTransmit.dmaCicr = 0x0020;
+dmaCfgTransmit.dmaSrcSpaceAdv = "Data Space";
+dmaCfgTransmit.dmaSrcAddrFormatAdv = "Symbolic";
+dmaCfgTransmit.dmaCssalSymbolic = "gBufferXmtPingL";
+dmaCfgTransmit.dmaDstSpaceAdv = "Data Space";
+dmaCfgTransmit.dmaDstAddrFormatAdv = "Numeric"
+dmaCfgTransmit.dmaCdsalNumeric = 0x6006;
+dmaCfgTransmit.dmaCdsauNumeric = 0x0000;
+dmaCfgTransmit.dmaCenAdv = 0x0002;
+dmaCfgTransmit.dmaCfnAdv = 0x0400;
+dmaCfgTransmit.dmaSetManually = 0;
+
+/* Configure DMA1 to use handle hDmaXmt with config dmaCfgTransmit */
+DMA0.dmaHandleEnable = 1;
+DMA0.dmaHandleName = "hDmaXmt";
+DMA0.dmaEnablePreInit = 1;
+DMA0.dmaPreInit = prog.get("dmaCfgTransmit");
+

@@ -1,0 +1,16 @@
+------------------------  pitch_estimation.pjt - Debug  ------------------------
+"f:\ti\c5500\cgtools\bin\cl55" -g -q -fr"F:/Users/sundevil/Desktop/Project_TI Files/pitch_estimation_tmpl/Debug" -i"./" -i"C:/CCStudio_v3.1/C5500/dsplib/include" -d"_DEBUG" -@"Debug.lkf" "max_idx.asm"
+"max_idx.asm", REMARK   at line 15: [R5538] This instruction may corrupt the TCx
+                                            status bits; be sure to see
+                                            Advisory CPU_24 in the rev 1.0
+                                            silicon errata
+			CMP T0 > T1, TC1 ; Compare the Current Value with the Max value, if it is greater, we store that in a Max register and if it isn't, just move-on to the next position		
+
+
+"f:\ti\c5500\cgtools\bin\cl55" -g -q -fr"F:/Users/sundevil/Desktop/Project_TI Files/pitch_estimation_tmpl/Debug" -i"./" -i"C:/CCStudio_v3.1/C5500/dsplib/include" -d"_DEBUG" -@"Debug.lkf" "pitch_estimation.c"
+"pitch_estimation.c", line 27: warning: variable "j" was set but never used
+
+"f:\ti\c5500\cgtools\bin\cl55" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 1 Warnings, 1 Remarks.

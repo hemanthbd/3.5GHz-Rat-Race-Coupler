@@ -1,0 +1,14 @@
+----------------------------  dsk_app1.pjt - Debug  ----------------------------
+"f:\ti\plugins\bios\gconfgen" dsk_app1.cdb
+
+"f:\ti\c5500\cgtools\bin\cl55" -g -mg -q -o0 -fr"./Debug" -i"F:/ti/c5500/dsplib/include" -i"c:/ti/c5500/dsplib/include" -d"_DEBUG" -mb -ml -mn -v5510:2 -@"Debug.lkf" "dsk_app1.c"
+"dsk_app1.c", line 212: warning: variable "t32" was declared but never referenced
+
+"f:\ti\c5500\cgtools\bin\cl55" -g -mg -q -o0 -fr"./Debug" -i"F:/ti/c5500/dsplib/include" -d"_DEBUG" -mb -ml -mn -v5510:2 -@"Debug.lkf" "dsk_app1cfg.s55"
+
+"f:\ti\c5500\cgtools\bin\cl55" -g -mg -q -o0 -fr"./Debug" -i"F:/ti/c5500/dsplib/include" -d"_DEBUG" -mb -ml -mn -v5510:2 -@"Debug.lkf" "dsk_app1cfg_c.c"
+
+"f:\ti\c5500\cgtools\bin\cl55" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 1 Warnings, 0 Remarks.
