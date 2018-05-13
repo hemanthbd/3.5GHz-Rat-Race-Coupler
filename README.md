@@ -1,3 +1,3 @@
-# Binary-Counter
+# Rat-Race-Coupler
 
-Implementing a Binary Counter in a Microcontroller
+Implemented a 180 degree Rat Race Coupler.
