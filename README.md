@@ -1,3 +1,3 @@
-# CNN
+# Binary-Counter
 
-Implement all layers of a basic CNN from scratch
+Implementing a Binary Counter in a Microcontroller
